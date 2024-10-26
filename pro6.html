@@ -1,62 +1,58 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MiInf - Milagros Informáticos</title>
+    <title>MiInf - Milagros Informáticos - Cambio Pasta Térmica</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="assets/logo.png" type="image/png">
 </head>
+
 <body>
 
+    <!-- Encabezado -->
     <header>
-        <a href="index.html">
-        <img src="assets/logo.png" alt="MiInf Logo" class="logo">
-	</a>
-        <h1>MiInf - Milagros Informáticos  </h1>
-	<br>
-        <center><h5>"Simplificando tu vida"</h5></center>
+        <a href="index.html" aria-label="Volver a la página principal">
+            <img src="assets/logo.png" alt="Logo de MiInf" class="logo">
+        </a>
+        <h1>MiInf - Milagros Informáticos</h1>
+        <p class="slogan">"Simplificando tu vida"</p>
     </header>
 
-    <!-- Detalle del Producto -->
+    <!-- Contenedor de Producto -->
     <main>
         <section class="producto-detalle">
             <h2>Cambio Pasta Térmica Procesador</h2>
-            <img src="assets/img6.png" alt="Imagen de Pro6">
-            <h5>Si tu Laptop / PC se calienta mucho</h5>
-            <p class="precio">$1.000*</p>
-            <p>*Los precios no incluyen piezas.</p>
+            <div class="producto-info">
+                <figure class="producto-imagen">
+                    <img src="assets/img6.png" alt="Imagen del producto: Cambio Pasta Térmica" class="producto-img">
+                    <figcaption>Evita el sobrecalentamiento cambiando la pasta térmica.</figcaption>
+                </figure>
+                <p class="descripcion">Selecciona esta opción si tu Laptop / PC se calienta mucho.</p>
+                <p class="precio">$1.000*</p>
+            </div>
         </section>
     </main>
 
     <!-- Botón de WhatsApp -->
-    <a href="https://wa.me/56991372436" class="whatsapp">
-        <img src="assets/whatsapp.png" alt="WhatsApp">
-    </a>
+    <div class="contacto-whatsapp">
+        <a href="https://wa.me/56991372436?text=Hola,%20quiero%20hacer%20el%20cambio%20de%20pasta%20térmica%20en%20mi%20computadora" class="whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp">
+            <img src="assets/whatsapp.png" alt="Contactar por WhatsApp">
+        </a>
+    </div>
 
     <!-- Pie de Página -->
     <footer>
         <div class="footer-left">
-            <p>&copy; MiInf, 2024</p>
-            <a href="https://example1.com"><img src="assets/ig.png" alt="Instagram"></a>
-            <a href="https://example2.com"><img src="assets/fb.png" alt="Facebook"></a>
-        </div>
-        <div class="footer-right">
-            <center>
-                <form action="https://formspree.io/f/mqakarbb" method="POST">
-                    <label for="nombre">Aquí va tu Nombre:</label>
-                    <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
-
-                    <label for="correo">Introduce tu Correo:</label>
-                    <input type="email" id="correo" name="correo" placeholder="Correo" required>
-
-                    <label for="mensaje">Escribe aquí tu mensaje:</label>
-                    <textarea id="mensaje" name="mensaje" placeholder="Mensaje" required></textarea>
-
-                    <button type="submit">Enviar</button>
-                </form>
-            </center>
+            <p>&copy; 2024 MiInf. Todos los derechos reservados.</p>
+            <div class="social-media">
+            <a href="https://www.instagram.com/miinf.cl/"><img src="assets/ig.png" alt="Instagram" width="25" target="_blank">
+		</a>
+            </div>
         </div>
     </footer>
 
 </body>
+
 </html>

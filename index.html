@@ -87,9 +87,9 @@
             </div>
             <div class="producto">
                 <a href="pro9.html">
-                    <h3>Cambio Procesador</h3>
+                    <h3>Activar Licencia Windows u Office</h3>
                     <img src="assets/img9.png" alt="Imagen de Pro9">
-		    <h5>Si tu computadora está obsoleta</h5>
+		    <h5>Si necesitas activar uno de estos programas, y quieres ahorrar lo máximo posible</h5>
                     <p class="precio">$5.000*</p>
                 </a>
             </div>
@@ -98,7 +98,7 @@
                     <h3>Cotizar Armado PC</h3>
                     <img src="assets/img10.png" alt="Imagen de Pro10">
 		    <h5>Si tu computadora está obsoleta</h5>
-                    <p class="precio">$10.000</p>
+                    <p class="precio">5% del precio final, tope $35.000</p>
                     <h7 class="text">Precio no incluye piezas</h6>
                 </a>
             </div>
@@ -107,7 +107,7 @@
                     <h3>Cambio Batería</h3>
                     <img src="assets/img11.png" alt="Imagen de Pro11">
 		    <h5>Si la batería de tu equipo está desgastada</h5>
-                    <p class="precio">$5.000*</p>
+                    <p class="precio">$2.500*</p>
                 </a>
             </div>
             <div class="producto">
@@ -115,7 +115,7 @@
                     <h3>Restaurar Contraseña</h3>
                     <img src="assets/img12.png" alt="Imagen de Pro12">
 		    <h5>Si haz olvidado tu contraseña</h5>
-                    <p class="precio">$5.000*</p>
+                    <p class="precio">$1.000</p>
                 </a>
             </div>
         </section>
@@ -131,7 +131,7 @@
     <footer>
         <div class="footer-left">
             <p>&copy; MiInf, 2024</p>
-            <a href="https://www.instagram.com/miinf.cl/"><img src="assets/ig.png" alt="Instagram" width="25"></a>
+            <a href="https://www.instagram.com/miinf.cl/"><img src="assets/ig.png" alt="Instagram" width="25" target="_blank"></a>
         </div>
         <div class="footer-right">
 	    <center>
@@ -146,35 +146,9 @@
         <textarea id="mensaje" name="mensaje" placeholder="Mensaje" required></textarea>
 
         <button type="submit">Enviar</button>
-    </form>
-</center>
-
-
-<script>
-document.getElementById('contactForm').addEventListener('submit', function(event) {
-    event.preventDefault();
-
-    const formData = {
-        nombre: document.getElementById('nombre').value,
-        correo: document.getElementById('correo').value,
-        mensaje: document.getElementById('mensaje').value
-    };
-
-    fetch('/submit-form', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(formData)
-    })
-    .then(response => response.text())
-    .then(data => {
-        alert(data);
-        document.getElementById('contactForm').reset();
-    })
-    .catch(error => console.error('Error:', error));
-});
-</script>
-
-        </div>
+	</form>
+	</center>
+	</div>
     </footer>
 
 </body>
